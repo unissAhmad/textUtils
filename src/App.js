@@ -17,12 +17,12 @@ function App(){
       setMode('dark');
       document.body.style.backgroundColor='black';
       showAlert("Dark mode has been enabled","success");
-      document.title='textUtils - Dark mode';
+      // document.title='textUtils - Dark mode';
     }else{
       setMode('light');
       document.body.style.backgroundColor='white';
       showAlert("Light mode has been enabled","success");
-      document.title='textUtils - Light mode'; 
+      // document.title='textUtils - Light mode'; 
     }
   }
   const[alert,setAlert]= useState(null);
@@ -38,7 +38,7 @@ function App(){
   return(
   <>
       <Router>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} contact = "Contact Us" about="About Utils"/>
+    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} contact = "Home" about="About TextUtils"/>
     <div className="container my-3">
         <Alert alert = {alert}/>
         <Switch>
@@ -46,7 +46,7 @@ function App(){
             <About mode = {mode}/>
           </Route>
           <Route exact path="/">
-          <TextForm  heading = 'Enter the text to analyze' showAlert={showAlert} mode={mode} btn1="Convert to Uppercase"  
+          <TextForm heading = 'TextUtils - Your 1stop for various text operations' showAlert={showAlert} mode={mode} btn1="Convert to Uppercase"  
             btn2 = "convert to Lowercase"
             btn3 = "Click to copy text"
             btn4 = "Remove extra spaces"
