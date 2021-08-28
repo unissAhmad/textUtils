@@ -1,9 +1,5 @@
 import React from 'react';
 export default function About(props) {
-    // const [myStyle, setmyStyle] = useState( {
-    //     backgroundColor: 'white',
-    //     color: 'black',
-    // });
     let noBorder = {
         color: props.mode==="dark" ? 'white':'black',
         backgroundColor: props.mode==="dark" ? 'black':'white',
@@ -31,7 +27,7 @@ export default function About(props) {
             </h2>
             <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
             <div className="accordion-body"style={myStyle}>
-            Textutils gives you a way to analyze your text quickly and efficiently. gives you word count, character count and average time to reading
+            Textutils gives you a way to analyze your text quickly and efficiently. gives you word count, character count and average time of reading
             </div>
             </div>
         </div>
@@ -43,7 +39,7 @@ export default function About(props) {
             </h2>
             <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
             <div className="accordion-body"style={myStyle}>
-            TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/character limit.
+            TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text without word/character limit.
             </div>
             </div>
         </div>
@@ -62,9 +58,11 @@ export default function About(props) {
         </div>
         <div style={{marginTop: '100px'}}>
         <p>This is an open source react-app</p>
-        <p>Source code of this is app is available on my gitHub</p>
-        <p><a href="github.com/unissAhmad/textUtils" style={{textDecoration:'none'}}>click here to checkout source code</a></p>
-        <p>Designed and devaloped by <a href="linkedin.com/in/uniss/"style={{textDecoration:'none'}}>Uniss</a></p>
+        <p>Source code of this is app is available on my gitHub
+        github.com/unissAhmad/textUtils
+        </p>
+        {/* <p>Designed and devaloped by <a href="linkedin.com/in/uniss/"style={{textDecoration:'none'}}>Uniss</a></p> */}
+        <p>Designed and devaloped by Uniss</p>
         <p></p>
         <p></p>
         </div>
